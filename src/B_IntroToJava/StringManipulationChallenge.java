@@ -111,7 +111,7 @@ public class StringManipulationChallenge {
      */
     public static String stringTrim(String usersStringWithWhiteSpace) {
         // TODO: Implement this method
-        return null;
+        return usersStringWithWhiteSpace.trim();
     }
 
     /**
@@ -128,7 +128,7 @@ public class StringManipulationChallenge {
     public static String stringSubstring(String x, int firstElement, int lengthOfSubstring) {
         // TODO: Implement this method
         // Suggested: validate null input, non-negative indices, and bounds
-        return null;
+        return x.substring(firstElement, firstElement + lengthOfSubstring);
     }
 
     /**
@@ -143,7 +143,7 @@ public class StringManipulationChallenge {
      */
     public static int searchChar(String userInputString, char charUserWants) {
         // TODO: Implement this method
-        return -1;
+        return userInputString.indexOf(charUserWants);
     }
 
     /**
@@ -158,6 +158,6 @@ public class StringManipulationChallenge {
      */
     public static String concatNames(String fName, String lName) {
         // TODO: Implement this method
-        return null;
+        return fName + lName;
     }
 }
