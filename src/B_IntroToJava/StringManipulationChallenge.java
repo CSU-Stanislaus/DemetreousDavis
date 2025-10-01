@@ -158,6 +158,6 @@ public class StringManipulationChallenge {
      */
     public static String concatNames(String fName, String lName) {
         // TODO: Implement this method
-        return fName + lName;
+        return String.format("%s %s", fName, lName);
     }
 }
