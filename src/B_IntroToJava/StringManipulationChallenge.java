@@ -85,7 +85,7 @@ public class StringManipulationChallenge {
      */
     public static String stringToUpper(String myString) { // the method itself has 'parameters'
         // TODO: Implement this method
-        return stringToUpper(myString);
+        return myString.toUpperCase();
     }
 
     /**
@@ -97,7 +97,7 @@ public class StringManipulationChallenge {
      */
     public static String stringToLower(String usersString) {
         // TODO: Implement this method
-        return stringToLower(usersString);
+        return usersString.toLowerCase();
     }
 
     /**
