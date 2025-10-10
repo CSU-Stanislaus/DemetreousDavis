@@ -82,7 +82,8 @@ public class ControlStatements {
      */
     public static boolean isEven(int n) {
         // TODO: Use if/else with n % 2 to determine evenness
-        return false;
+        if (n % 2 == 0) {return true;}
+        else {return false;}
     }
 
     /**
@@ -91,7 +92,8 @@ public class ControlStatements {
      */
     public static int maxOfTwo(int a, int b) {
         // TODO: Use if/else to compare and return the max
-        return 0;
+        if (a > b) {return a;}
+        else {return b;}
     }
 
     /**
@@ -101,7 +103,11 @@ public class ControlStatements {
      */
     public static String gradeLetter(int score) {
         // TODO: Implement the ladder and input validation
-        return null;
+        if (score >= 90) {return "A";}
+        else if (score >= 80) {return "B";}
+        else if (score >= 70) {return "C";}
+        else if (score >= 60) {return "D";}
+        else return "F";
     }
 
     /**
@@ -113,7 +119,10 @@ public class ControlStatements {
      */
     public static String fizzBuzzOne(int n) {
         // TODO: Implement FizzBuzz logic with if/else
-        return null;
+        if (n % 3 == 0 && n % 5 == 0) {return "FizzBuzz";}
+        else if (n % 3 == 0) {return "Fizz";}
+        else if (n % 5 == 0) {return "Buzz";}
+        else return "" + n;
     }
 
     /**
@@ -123,7 +132,12 @@ public class ControlStatements {
      */
     public static int sum1toN(int n) {
         // TODO: Use a for loop to accumulate the sum
-        return 0;
+        if (n < 1)  {return 0;}
+        int sum = 0;
+        for (int i = 1; i <= n; i++) {
+            sum += i;
+        }
+        return sum;
     }
 
     /**
@@ -133,7 +147,12 @@ public class ControlStatements {
      */
     public static long factorial(int n) {
         // TODO: Use a while loop to multiply down to 1
-        return 0L;
+        if (n < 0) {return -1;}
+        long factorial = 1;
+        for (int i = 1; i <= n; i++) {
+            factorial *= i;
+        }
+        return factorial;
     }
 
     /**
@@ -143,7 +162,10 @@ public class ControlStatements {
      */
     public static String reverseString(String s) {
         // TODO: Build a reversed string using a for loop from end->start
-        return null;
+        for (int i = s.length() - 1; i >= 0; i--) {
+            System.out.print(s.charAt(i));
+        }
+        return s;
     }
 
     /**
@@ -153,7 +175,17 @@ public class ControlStatements {
      */
     public static int countVowels(String s) {
         // TODO: Loop through characters; use continue for non-vowels
-        return 0;
+        if (s == null || s.length() == 0) {return 0;}
+        int count = 0;
+        s = s.toLowerCase();
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if (ch !='a' && ch !='e' && ch !='o' && ch !='u') {
+                continue;
+            }
+            count++;
+        }
+        return count;
     }
 
     /**
@@ -167,7 +199,11 @@ public class ControlStatements {
      */
     public static String multiplicationTable(int n) {
         // TODO: Use a loop from 1 to 10 and build the lines
-        return null;
+        StringBuilder sb = new StringBuilder();
+        for (int i = 1; i <= 10; i++) {
+            sb.append(n * i);
+        }
+        return sb.toString();
     }
 
     /**
@@ -177,6 +213,15 @@ public class ControlStatements {
      */
     public static String dayNameSwitch(int dayNumber) {
         // TODO: Implement switch statement
-        return null;
+        switch (dayNumber) {
+            case 1: return "Monday";
+            case 2: return "Tuesday";
+            case 3: return "Wednesday";
+            case 4: return "Thursday";
+            case 5: return "Friday";
+            case 6: return "Saturday";
+            case 7: return "Sunday";
+            default: return "";
+        }
     }
 }
