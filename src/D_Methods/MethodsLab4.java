@@ -12,40 +12,40 @@ public class MethodsLab4 {
         // Example tests (uncomment after you write the methods):
 
         // Q1: greet
-        // String msg1 = greet("Ava");
-        // String msg2 = greet("Professor");
-        // System.out.println("greet(\"Ava\") = " + msg1);
-        // System.out.println("greet(\"Professor\") = " + msg2);
+         String msg1 = greet("Ava");
+         String msg2 = greet("Professor");
+         System.out.println("greet(\"Ava\") = " + msg1);
+         System.out.println("greet(\"Professor\") = " + msg2);
 
         // Q2: add
-        // int sum1 = add(2, 3);
-        // int sum2 = add(100, 400);
-        // System.out.println("add(2, 3) = " + sum1);
-        // System.out.println("add(100, 400) = " + sum2);
+         int sum1 = add(2, 3);
+         int sum2 = add(100, 400);
+         System.out.println("add(2, 3) = " + sum1);
+         System.out.println("add(100, 400) = " + sum2);
 
         // Q3: max
-        // int m1 = max(10, 4);
-        // int m2 = max(9, 9);
-        // System.out.println("max(10, 4) = " + m1);
-        // System.out.println("max(9, 9) = " + m2);
+         int m1 = max(10, 4);
+         int m2 = max(9, 9);
+         System.out.println("max(10, 4) = " + m1);
+         System.out.println("max(9, 9) = " + m2);
 
         // Q4: fullName
-        // String name1 = fullName("Taylor", "Swift");
-        // String name2 = fullName("Bruce", "Wayne");
-        // System.out.println("fullName(\"Taylor\", \"Swift\") = " + name1);
-        // System.out.println("fullName(\"Bruce\", \"Wayne\") = " + name2);
+         String name1 = fullName("Taylor", "Swift");
+         String name2 = fullName("Bruce", "Wayne");
+         System.out.println("fullName(\"Taylor\", \"Swift\") = " + name1);
+         System.out.println("fullName(\"Bruce\", \"Wayne\") = " + name2);
 
         // Q5: isEven
-        // boolean even1 = isEven(8);
-        // boolean even2 = isEven(13);
-        // System.out.println("isEven(8) = " + even1);
-        // System.out.println("isEven(13) = " + even2);
+         boolean even1 = isEven(8);
+         boolean even2 = isEven(13);
+         System.out.println("isEven(8) = " + even1);
+         System.out.println("isEven(13) = " + even2);
 
         // ⭐ EXTRA (optional)
-        // String shout1 = shout("stop");
-        // String shout2 = shout("hello world");
-        // System.out.println("shout(\"stop\") = " + shout1);
-        // System.out.println("shout(\"hello world\") = " + shout2);
+         String shout1 = shout("stop");
+         String shout2 = shout("hello world");
+         System.out.println("shout(\"stop\") = " + shout1);
+         System.out.println("shout(\"hello world\") = " + shout2);
     }
 
 
@@ -69,7 +69,7 @@ public class MethodsLab4 {
     // ============================================================
     public static String greet(String name) {
         // TODO: return "Hello, " + name + "!";
-        return null;
+        return "hello, " + name + "!";
     }
 
 
@@ -92,7 +92,7 @@ public class MethodsLab4 {
     // ============================================================
     public static int add(int a, int b) {
         // TODO: return a + b;
-        return 0;
+        return a + b;
     }
 
 
@@ -126,7 +126,11 @@ public class MethodsLab4 {
         // } else {
         //     return y;
         // }
-        return 0;
+        if (x >= y) {
+            return x;
+        } else {
+            return y;
+        }
     }
 
 
@@ -150,7 +154,7 @@ public class MethodsLab4 {
     // ============================================================
     public static String fullName(String first, String last) {
         // TODO: return first + " " + last;
-        return null;
+        return first + " " + last;
     }
 
 
@@ -178,7 +182,7 @@ public class MethodsLab4 {
     // ============================================================
     public static boolean isEven(int n) {
         // TODO: return n % 2 == 0;
-        return false;
+        return n % 2 == 0;
     }
 
 
@@ -207,7 +211,7 @@ public class MethodsLab4 {
     // ============================================================
     public static String shout(String text) {
         // TODO: return text.toUpperCase() + "!";
-        return null;
+        return text.toUpperCase() + "!";
     }
 }
 
