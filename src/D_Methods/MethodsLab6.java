@@ -10,25 +10,25 @@ public class MethodsLab6 {
         // ===========================
 
         // Q1: isAdult
-        // System.out.println("isAdult(17) = " + isAdult(17)); // false
-        // System.out.println("isAdult(18) = " + isAdult(18)); // true
-        // System.out.println("isAdult(25) = " + isAdult(25)); // true
+         System.out.println("isAdult(17) = " + isAdult(17)); // false
+         System.out.println("isAdult(18) = " + isAdult(18)); // true
+         System.out.println("isAdult(25) = " + isAdult(25)); // true
 
         // Q2: formatMoney
-        // System.out.println(formatMoney("Alice", 12.5));
-        // System.out.println(formatMoney("Bob", 100.0));
+         System.out.println(formatMoney("Alice", 12.5));
+         System.out.println(formatMoney("Bob", 100.0));
 
         // Q3: areaOfRectangle
-        // System.out.println("areaOfRectangle(5, 4) = " + areaOfRectangle(5, 4));
-        // System.out.println("areaOfRectangle(10, 2) = " + areaOfRectangle(10, 2));
+         System.out.println("areaOfRectangle(5, 4) = " + areaOfRectangle(5, 4));
+         System.out.println("areaOfRectangle(10, 2) = " + areaOfRectangle(10, 2));
 
         // Q4: firstChar
-        // System.out.println("firstChar(\"hello\") = " + firstChar("hello"));
-        // System.out.println("firstChar(\"Java\") = " + firstChar("Java"));
+         System.out.println("firstChar(\"hello\") = " + firstChar("hello"));
+         System.out.println("firstChar(\"Java\") = " + firstChar("Java"));
 
         // Q5: toCelsius
-        // System.out.println("toCelsius(32) = " + toCelsius(32.0));
-        // System.out.println("toCelsius(98.6) = " + toCelsius(98.6));
+         System.out.println("toCelsius(32) = " + toCelsius(32.0));
+         System.out.println("toCelsius(98.6) = " + toCelsius(98.6));
     }
 
 
@@ -53,7 +53,7 @@ public class MethodsLab6 {
     // ============================================================
     public static boolean isAdult(int age) {
         // TODO: return age >= 18;
-        return false;
+        return age >= 18;
     }
 
 
@@ -77,7 +77,7 @@ public class MethodsLab6 {
     // ============================================================
     public static String formatMoney(String name, double amount) {
         // TODO: return name + " has $" + amount;
-        return null;
+        return name + "has $" + amount;
     }
 
 
@@ -100,7 +100,7 @@ public class MethodsLab6 {
     // ============================================================
     public static int areaOfRectangle(int width, int height) {
         // TODO: return width * height;
-        return 0;
+        return width * height;
     }
 
 
@@ -126,7 +126,7 @@ public class MethodsLab6 {
     // ============================================================
     public static char firstChar(String text) {
         // TODO: return text.charAt(0);
-        return 'x';
+        return text.charAt(0);
     }
 
 
@@ -153,7 +153,7 @@ public class MethodsLab6 {
     // ============================================================
     public static double toCelsius(double f) {
         // TODO: return (f - 32) * 5.0 / 9.0;
-        return 0.0;
+        return (f - 32) * 5.0 / 9.0;
     }
 }
 
